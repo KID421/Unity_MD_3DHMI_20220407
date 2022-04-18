@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfeac5989d9e704d87e5be873753350, type: 3}
+  m_Name: "\u54C1\u724C A"
+  m_EditorClassIdentifier: 
+  colorBg: {r: 0.6981132, g: 0.07573871, b: 0.07573871, a: 0.7058824}
+  sizeTitle: 50
+  fontTitle: {fileID: 12800000, guid: dedb0b674642e4745b6e62344a2aaf96, type: 3}
+  colorContent: {r: 0.83137256, g: 0.60784316, b: 0.60784316, a: 1}
+  colorOption: {r: 0.8301887, g: 0.6069776, b: 0.6069776, a: 1}
+  spriteClose: {fileID: 21300000, guid: 1f8edbef366a7c8489eb0afd7f9f921a, type: 3}

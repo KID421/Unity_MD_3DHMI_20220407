@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u6C7D\u8ECA HMI.unity"
+    guid: ef3c6c1218c94fd4e8ffa398cb555da0
   m_configObjects: {}

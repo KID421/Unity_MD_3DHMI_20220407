@@ -16,6 +16,10 @@ public class CarControl : MonoBehaviour
     private Text textSpeedSmall;
     [SerializeField, Header("速度"), Range(0, 50)]
     private float speed = 10;
+    [SerializeField, Header("車子大燈")]
+    private GameObject goLight;
+    [SerializeField, Header("切換大燈按鍵")]
+    private KeyCode keyLight = KeyCode.Q;
 
     private Rigidbody rig;
 
@@ -30,6 +34,7 @@ public class CarControl : MonoBehaviour
     private void Update()
     {
         Move();
+        SwitchLight();
     }
 
     /// <summary>
@@ -47,5 +52,17 @@ public class CarControl : MonoBehaviour
         z = Mathf.Clamp(z, 0, 500);             // 夾住（值，最小，最大）
         textSpeed.text = z.ToString("f0");
         textSpeedSmall.text = z.ToString("f0");
+    }
+
+    /// <summary>
+    /// 切換大燈
+    /// </summary>
+    private void SwitchLight()
+    {
+        if (Input.GetKeyDown(keyLight))
+        {
+            // 車燈.啟動設定（車燈目前啟動狀態相反值）
+            goLight.SetActive(!goLight.activeInHierarchy);
+        }
     }
 }
